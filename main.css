@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+}
+.container {
+  position: relative;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .icon {
+  width: 170px;
+}
+.container .icon path {
+  stroke-width: 8;
+  stroke: lightblue;
+}
+.iconheart {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 0;
+}
+.iconheart:hover {
+  cursor: pointer;
+  animation: iconheart 2s linear forwards;
+}
+@keyframes iconheart {
+  0% {
+  stroke-dashoffset: 0;
+  }
+  20% {
+  stroke-dashoffset: 1400;
+  }
+  40% {
+  stroke-dashoffset: 2800;
+  fill: transparent;
+  }
+  50% {
+  fill: lightblue;
+  }
+  100% {
+  stroke-dashoffset: 2800;
+  fill: lightblue;
+  }
+}
+.iconstar {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+}
+.iconstar:hover {
+  cursor: pointer;
+  animation: iconstar 3s linear forwards;
+}
+@keyframes iconstar {
+  0% {
+  stroke-dashoffset: 0;
+  }
+  20% {
+  stroke-dashoffset: 2000;
+  }
+  40% {
+  stroke-dashoffset: 4000;
+  fill: transparent;
+  }
+  50% {
+  fill: lightblue;
+  }
+  100% {
+  stroke-dashoffset: 4000;
+  fill: lightblue;
+  }
+}
+.iconmoon {
+stroke-dasharray: 1400;
+stroke-dashoffset: 0;
+}
+.iconmoon:hover {
+cursor: pointer;
+animation: iconmoon 2.5s linear forwards;
+}
+@keyframes iconmoon {
+0% {
+stroke-dashoffset: 0;
+  }
+20% {
+stroke-dashoffset: 1400;
+  }
+40% {
+stroke-dashoffset: 2800;
+fill: transparent;
+  }
+45% {
+fill: lightblue;
+  }
+100% {
+stroke-dashoffset: 2800;
+fill: lightblue;
+  }
+}
